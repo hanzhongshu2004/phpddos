@@ -1,4 +1,7 @@
 <?php
+/*集合了cc攻击，udp攻击的一个php脚本，并有多种攻击实现方法
+*有些主机可能禁用某些函数，那么攻击会失败
+*/
 class ddos {
 	public $ip,$port;
 	public function setsomething($ip,$port) {
